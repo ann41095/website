@@ -12,6 +12,7 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     public void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+      request.setAttribute("message", "Ann");
       request.getRequestDispatcher("index.jsp").forward(request,response);
     }
 }
