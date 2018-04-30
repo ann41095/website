@@ -30,6 +30,11 @@
       <version>4.0.0</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.0</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -76,7 +81,7 @@
             <server>TomcatServer</server>
             <username>admin</username>
             <password>admin</password>
-            <path>/</path>
+            <path>/hello</path>
           </configuration>
         </plugin>
       </plugins>
